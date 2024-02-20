@@ -1,8 +1,11 @@
 .env
 __init__.py
-*/__pycache__/
-logs/
-config/
+__pycache__/
+*.pyc
+*.pyo
+logs
+config
 docker-compose.yaml
 airflow.cfg
 Dockerfile
+airflow-webserver.pid
