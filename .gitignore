@@ -1,6 +1,6 @@
 .env
-logs/
-config/
+logs
+config
 docker-compose.yaml
 airflow.cfg
 Dockerfile
