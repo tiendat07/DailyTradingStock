@@ -2,12 +2,14 @@ import pandas as pd
 import psycopg2, os
 from vnstock import *
 from datetime import date, datetime
+from dotenv import load_dotenv
+load_dotenv()
 
 hostname = 'host.docker.internal'
-port = "5432"
-username = 'datdao' # the username when you create the database
-password = 'Tiendat2807' #change to your password
-database = 'TEST'
+port = os.getenv('DB_PORT')
+username = os.getenv('DB_USER') # the username when you create the database
+password = os.getenv('DB_PASS') #change to your password
+database = os.getenv('DB_DBNAME')
  
 def queryQuotes( conn ) :
     cur = conn.cursor()
