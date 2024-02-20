@@ -9,3 +9,4 @@ docker-compose.yaml
 airflow.cfg
 Dockerfile
 airflow-webserver.pid
+*.pyc
