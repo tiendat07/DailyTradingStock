@@ -1,6 +1,6 @@
 .env
 __init__.py
-__pycache__/
+*/__pycache__/
 logs/
 config/
 docker-compose.yaml
